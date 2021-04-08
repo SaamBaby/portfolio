@@ -2,15 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_web/components/Header.dart';
-import 'package:portfolio_web/utils/constants.dart';
 import 'package:portfolio_web/utils/globals.dart';
 
 import 'AboutMe.dart';
+import 'Contact.dart';
 import 'Intro.dart';
+import 'Skills.dart';
 import 'Works.dart';
-
-
-
 
 class Home extends StatelessWidget {
 
@@ -79,8 +77,8 @@ class Home extends StatelessWidget {
               // SizedBox(height: 50,),
               AboutMe(),
               Works(),
-              // Skills(),
-              // ContactMe()
+              Skills(),
+              ContactMe()
             ],
           ),
         ),
