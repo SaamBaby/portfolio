@@ -3,6 +3,7 @@ import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_web/components/ContactMe.dart';
 import 'package:portfolio_web/utils/constants.dart';
 import 'package:portfolio_web/utils/responsive.screen.helper.dart';
 
@@ -34,7 +35,7 @@ class ContactMe extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                      left: 150, right: 150, top: 20, bottom: 100),
+                      left: 150, right: 150, top: 0, bottom: 0),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -109,61 +110,9 @@ class ContactMe extends StatelessWidget {
                           SizedBox(
                             height: 60,
                           ),
-                          MouseRegion(
-                            cursor: SystemMouseCursors.click,
-                            child: Row(
-                              children: [
-                                Icon(Icons.email),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                TextButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    "saam.baby@outlook.com",
-                                    style: GoogleFonts.varelaRound(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.w700,
-                                        color: Colors.black),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(Icons.arrow_forward,
-                                      color: kPrimaryColor),
-                                )
-                              ],
-                            ),
-                          ),
+
                           SizedBox(
-                            height: 5,
-                          ),
-                          MouseRegion(
-                            cursor: SystemMouseCursors.click,
-                            child: Row(
-                              children: [
-                                Icon(Icons.phone),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                TextButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    "+1 2499890215",
-                                    style: GoogleFonts.varelaRound(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.w700,
-                                        color: Colors.black),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          SizedBox(
-                            height: 50,
+                            height: 100,
                           ),
                           Row(
                             children: [
@@ -206,9 +155,11 @@ class ContactMe extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
+                          SignInForm(),
                           SizedBox(
-                            height: 200,
+                            height: 50,
                           ),
+
                         ],
                       ),
                     ],

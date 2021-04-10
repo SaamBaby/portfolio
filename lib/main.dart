@@ -16,13 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Portfolio',
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
       darkTheme: Theme.of(context).copyWith(
           platform: TargetPlatform.android,
           scaffoldBackgroundColor: kBackgroundColor,
           primaryColor: kPrimaryColor,
           canvasColor: kBackgroundColor,
-
           textTheme:GoogleFonts.varelaRoundTextTheme()
       ),
       builder: (context, widget)=> ResponsiveWrapper.builder(

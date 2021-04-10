@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-const Color kPrimaryColor= Color(0xff54E597);
+const Color kPrimaryColor= Colors.lightBlue;
 const Color kBackgroundColor= Color(0xffffffff);
 const Color kDangerColor= Color(0xffEF9A25);
 const Color kHeadingColor=Color(0xff261C3F);
