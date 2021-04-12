@@ -154,19 +154,255 @@ class _SkillsState extends State<Skills> {
           ],
         ),
 
-        tablet:Padding(
-          padding: EdgeInsets.only(top: 10,bottom: 10,right: 50),
-          child: Container(
-            color: Colors.amber,
-            child: Text("test"),
-          ),
+        tablet:Stack(
+          children: [
+            Positioned(
+              left: 100,right: 0,
+              child:  Text(
+                "SKILLS",
+                style: GoogleFonts.montserrat(
+                  color: Color(0xFFf3f3f3).withOpacity(.5),
+                  fontWeight: FontWeight.w800,
+                  height: 1,
+                  fontSize: MediaQuery.of(context).size.width * 0.14,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 50,right: 50,top:0,bottom:50),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Container(
+                    width: _width*.48,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(right: 5),
+                              height:5.0,
+                              width:40.0,
+                              color:kPrimaryColor,),
+                            Text("Skills",style: GoogleFonts.varelaRound(
+                                fontSize: 15,
+                                height: 1.8,
+                                letterSpacing: 1.5,
+                                fontWeight: FontWeight.w900,
+                                color: kPrimaryColor
+                            ),)
+                          ],
+                        ),
+                        RichText(
+                            text: TextSpan(
+                              text: "My Skills",
+                              style: GoogleFonts.montserrat(
+                                fontSize: 50,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: .5,
+                                height: 1,
+                                color: Colors.black,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: ' & ',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 60,
+                                    fontWeight: FontWeight.w900,
+                                    letterSpacing: .5,
+                                    color: kPrimaryColor,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: "\nTools",
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 50,
+                                    fontWeight: FontWeight.w900,
+                                    letterSpacing: .5,
+                                    height: 1,
+                                    color: Colors.black,
+                                  ),
+                                )
+                              ],
+                            )
+                        ),
+                        SizedBox(height: 10,),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 160,
+                    child:ListView.builder(
+                      reverse: true,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: skillsItems.length,
+                      itemBuilder: (context, position) {
+                        return  MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              child: Center(
+                                child: Container(
+                                  child: Column(
+
+                                    children: [
+                                      Image.asset(skillsItems[position].imgUrl,
+                                        height: 120,width: 120,),
+                                      Text(
+                                        skillsItems[position].name,
+                                        style: GoogleFonts.varelaRound(
+                                            fontSize: 14,
+                                            height: 1.3,
+                                            letterSpacing: 1.3,
+                                            fontWeight: FontWeight.w900,
+                                            color: Colors.black.withOpacity(.6)
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                          ),
+                        );
+
+                      },
+                    )
+                  )
+
+
+
+                ],
+              ),
+            ),
+          ],
         ),
-        mobile: Padding(
-          padding: EdgeInsets.only(top: 10,bottom: 10,right: 50),
-          child: Container(
-            color: Colors.pinkAccent,
-            child: Text("test"),
-          ),
+        mobile:Stack(
+          children: [
+            Positioned(
+              left: 100,right: 0,
+              child:  Text(
+                "SKILLS",
+                style: GoogleFonts.montserrat(
+                  color: Color(0xFFf3f3f3).withOpacity(.5),
+                  fontWeight: FontWeight.w800,
+                  height: 1,
+                  fontSize: MediaQuery.of(context).size.width * 0.14,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 50,right: 50,top:0,bottom:5),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Container(
+                    width: _width*.48,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(right: 5),
+                              height:5.0,
+                              width:40.0,
+                              color:kPrimaryColor,),
+                            Text("Skills",style: GoogleFonts.varelaRound(
+                                fontSize: 15,
+                                height: 1.8,
+                                letterSpacing: 1.5,
+                                fontWeight: FontWeight.w900,
+                                color: kPrimaryColor
+                            ),)
+                          ],
+                        ),
+                        RichText(
+                            text: TextSpan(
+                              text: "My Skills",
+                              style: GoogleFonts.montserrat(
+                                fontSize: 40,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: .5,
+                                height: 1,
+                                color: Colors.black,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: ' & ',
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 50,
+                                    fontWeight: FontWeight.w900,
+                                    letterSpacing: .5,
+                                    color: kPrimaryColor,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: "\nTools",
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 40,
+                                    fontWeight: FontWeight.w900,
+                                    letterSpacing: .5,
+                                    height: 1,
+                                    color: Colors.black,
+                                  ),
+                                )
+                              ],
+                            )
+                        ),
+                        SizedBox(height: 10,),
+                      ],
+                    ),
+                  ),
+                  Container(
+                      height: 160,
+                      child:ListView.builder(
+                        reverse: true,
+                        scrollDirection: Axis.horizontal,
+                        itemCount: skillsItems.length,
+                        itemBuilder: (context, position) {
+                          return  MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: Container(
+                                margin: EdgeInsets.only(right: 5),
+                                child: Center(
+                                  child: Container(
+                                    child: Column(
+
+                                      children: [
+                                        Image.asset(skillsItems[position].imgUrl,
+                                          height: 100,width: 100,),
+                                        Text(
+                                          skillsItems[position].name,
+                                          style: GoogleFonts.varelaRound(
+                                              fontSize: 12,
+                                              height: 1.3,
+                                              letterSpacing: 1.3,
+                                              fontWeight: FontWeight.w900,
+                                              color: Colors.black.withOpacity(.6)
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                )
+                            ),
+                          );
+
+                        },
+                      )
+                  )
+
+
+
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );

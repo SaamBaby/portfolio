@@ -401,19 +401,528 @@ class _WorksState extends State<Works> with TickerProviderStateMixin {
             ),
           ],
         ),
-        tablet: Padding(
-          padding: EdgeInsets.only(top: 10, bottom: 10, right: 50),
-          child: Container(
-            color: Colors.amber,
-            child: Text("test"),
-          ),
+        tablet: Stack(
+          children: [
+            Positioned(
+              left: 100,
+              right: 0,
+              child: Text(
+                "PORTFOLIO",
+                style: GoogleFonts.montserrat(
+                  color: Color(0xFFf3f3f3).withOpacity(.5),
+                  fontWeight: FontWeight.w800,
+                  height: 1,
+                  fontSize: MediaQuery.of(context).size.width * 0.14,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 50, right: 50, top: 40,bottom:50),
+              child: Column(
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Container(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.only(right: 5),
+                                    height: 5.0,
+                                    width: 40.0,
+                                    color: kPrimaryColor,
+                                  ),
+                                  Text(
+                                    "WORKS",
+                                    style: GoogleFonts.varelaRound(
+                                        fontSize: 12,
+                                        height: 1.8,
+                                        letterSpacing: 1.5,
+                                        fontWeight: FontWeight.w900,
+                                        color: kPrimaryColor
+                                    ),
+                                  ),
+
+                                ],
+                              ),
+                              RichText(
+                                  text: TextSpan(
+                                    text: "My Personal",
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 40,
+                                      fontWeight: FontWeight.w900,
+                                      letterSpacing: .5,
+                                      height: 1,
+                                      color: Colors.black,
+                                    ),
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: ' .',
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 50,
+                                          fontWeight: FontWeight.w900,
+                                          letterSpacing: .5,
+                                          color: kPrimaryColor,
+                                        ),
+                                      ),
+                                      TextSpan(
+                                        text: "\nProjects",
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 40,
+                                          fontWeight: FontWeight.w900,
+                                          letterSpacing: .5,
+                                          height: 1,
+                                          color: Colors.black,
+                                        ),
+                                      )
+                                    ],
+                                  )),
+                              
+                              Container(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                        children: [
+                                          Image.asset(
+                                            'images/igreen.Screenshot.png',
+                                            width: 300,
+                                            height: 600,
+                                          ),
+                                          SizedBox(
+                                            width: 50,
+                                          ),
+
+                                          Container(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                              children: [
+                                                SizedBox(
+                                                  height: 120,
+                                                ),
+                                                Text(
+                                                  "ANDROID APP",
+                                                  style:GoogleFonts.varelaRound(
+                                                      fontSize: 10,
+                                                      height: 1.8,
+                                                      letterSpacing: 1.5,
+                                                      fontWeight: FontWeight.w900,
+                                                      color: kPrimaryColor
+                                                  ),
+                                                ),
+                                                RichText(
+                                                    text: TextSpan(
+                                                      text: "IGreen",
+                                                      style: GoogleFonts
+                                                          .montserrat(
+                                                        fontSize: 30,
+                                                        fontWeight:
+                                                        FontWeight.w900,
+                                                        letterSpacing: .5,
+                                                        height: 1.3,
+                                                        color: Colors.black,
+                                                      ),
+                                                      children: <TextSpan>[
+                                                        TextSpan(
+                                                          text: ' . ',
+                                                          style: GoogleFonts
+                                                              .montserrat(
+                                                            fontSize: 40,
+                                                            fontWeight:
+                                                            FontWeight.w900,
+                                                            letterSpacing: .5,
+                                                            color:
+                                                            kPrimaryColor,
+                                                          ),
+                                                        ),
+                                                        TextSpan(
+                                                          text: "Staffing",
+                                                          style: GoogleFonts
+                                                              .montserrat(
+                                                            fontSize: 30,
+                                                            fontWeight:
+                                                            FontWeight.w900,
+                                                            letterSpacing: .5,
+                                                            height: 1.3,
+                                                            color: Colors.black,
+                                                          ),
+                                                        ),
+                                                        TextSpan(
+                                                          text: "\nConnection",
+                                                          style: GoogleFonts
+                                                              .montserrat(
+                                                            fontSize: 30,
+                                                            fontWeight:
+                                                            FontWeight.w900,
+                                                            letterSpacing: .5,
+                                                            height: 1.3,
+                                                            color: Colors.black,
+                                                          ),
+                                                        )
+                                                      ],
+                                                    )),
+                                                SizedBox(
+                                                  height: 20,
+                                                ),
+                                                SizedBox(
+                                                    width:_width*.50,
+                                                    child: Text(
+                                                      kAboutIGreen,
+                                                      overflow: TextOverflow.visible,
+                                                      style: GoogleFonts.varelaRound(
+                                                          fontSize: 14,
+                                                          height: 1.8,
+                                                          letterSpacing: 1.2,
+                                                          fontWeight: FontWeight.w900,
+                                                          color: Colors.black.withOpacity(.5)
+                                                      ),
+                                                    
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 30,
+                                                ),
+                                                Row(
+                                                  mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .start,
+                                                  children: [
+                                                    RaisedButton(
+                                                      color: Colors.black,
+                                                      shape:
+                                                      RoundedRectangleBorder(
+                                                        borderRadius:
+                                                        BorderRadius
+                                                            .circular(
+                                                            10.0),
+                                                        // side: BorderSide(color: Colors.red)
+                                                      ),
+                                                      padding: EdgeInsets
+                                                          .symmetric(
+                                                          vertical: 20,
+                                                          horizontal:
+                                                          25),
+                                                      onPressed: () {
+                                                      },
+                                                      child: Text(
+                                                        "Next Project",
+                                                        style: GoogleFonts.varelaRound(
+                                                            fontSize: 12,
+                                                            height: 1.8,
+                                                            letterSpacing: 1.3,
+                                                            fontWeight: FontWeight.w900,
+                                                            color: Colors.white
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    SizedBox(
+                                                      width: 10,
+                                                    ),
+                                                    RaisedButton(
+                                                      hoverColor: kPrimaryColor.withOpacity(.4),
+                                                      textColor:  Colors.black,
+                                                      disabledTextColor: Colors.white,
+                                                      color: Colors.white,
+
+                                                      shape: RoundedRectangleBorder(
+
+                                                          borderRadius: BorderRadius.circular(10.0),
+                                                          side: BorderSide(color: Colors.black,width: 3)
+
+                                                      ),
+                                                      padding: EdgeInsets.symmetric(vertical: 20,
+                                                          horizontal: 25),
+                                                      onPressed: (){},
+                                                      child:  Text(
+                                                        "Explore More",
+                                                        style: GoogleFonts.varelaRound(
+                                                            fontSize: 12,
+                                                            height: 1.8,
+                                                            letterSpacing: 1.5,
+                                                            fontWeight: FontWeight.w900,
+                                                            color: Colors.black
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
+
+                                        ],
+                                      )
+                                    ],
+                                  )),
+                            ],
+                          )
+                      ),
+
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ],
         ),
-        mobile: Padding(
-          padding: EdgeInsets.only(top: 10, bottom: 10, right: 50),
-          child: Container(
-            color: Colors.pinkAccent,
-            child: Text("test"),
-          ),
+        mobile: Stack(
+          children: [
+            Positioned(
+              left: 100,
+              right: 0,
+              child: Text(
+                "PORTFOLIO",
+                style: GoogleFonts.montserrat(
+                  color: Color(0xFFf3f3f3).withOpacity(.5),
+                  fontWeight: FontWeight.w800,
+                  height: 1,
+                  fontSize: MediaQuery.of(context).size.width * 0.14,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 50, right: 50, top: 40,bottom:50),
+              child: Container(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.only(right: 5),
+                                    height: 5.0,
+                                    width: 40.0,
+                                    color: kPrimaryColor,
+                                  ),
+                                  Text(
+                                    "WORKS",
+                                    style: GoogleFonts.varelaRound(
+                                        fontSize: 12,
+                                        height: 1.8,
+                                        letterSpacing: 1.5,
+                                        fontWeight: FontWeight.w900,
+                                        color: kPrimaryColor
+                                    ),
+                                  ),
+
+                                ],
+                              ),
+                              RichText(
+                                  text: TextSpan(
+                                    text: "My Personal",
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 40,
+                                      fontWeight: FontWeight.w900,
+                                      letterSpacing: .5,
+                                      height: 1,
+                                      color: Colors.black,
+                                    ),
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: ' .',
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 50,
+                                          fontWeight: FontWeight.w900,
+                                          letterSpacing: .5,
+                                          color: kPrimaryColor,
+                                        ),
+                                      ),
+                                      TextSpan(
+                                        text: "\nProjects",
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 40,
+                                          fontWeight: FontWeight.w900,
+                                          letterSpacing: .5,
+                                          height: 1,
+                                          color: Colors.black,
+                                        ),
+                                      )
+                                    ],
+                                  )),
+                              Container(
+                                  child:
+                                  Column(
+                                        crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                        children: [
+                                          Image.asset(
+                                            'images/igreen.Screenshot.png',
+                                            width: 400,
+                                            height: 600,
+                                          ),
+                                          Container(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  "ANDROID APP",
+                                                  style:GoogleFonts.varelaRound(
+                                                      fontSize: 10,
+                                                      height: 1.8,
+                                                      letterSpacing: 1.5,
+                                                      fontWeight: FontWeight.w900,
+                                                      color: kPrimaryColor
+                                                  ),
+                                                ),
+                                                RichText(
+                                                    text: TextSpan(
+                                                      text: "IGreen",
+                                                      style: GoogleFonts
+                                                          .montserrat(
+                                                        fontSize: 30,
+                                                        fontWeight:
+                                                        FontWeight.w900,
+                                                        letterSpacing: .5,
+                                                        height: 1.3,
+                                                        color: Colors.black,
+                                                      ),
+                                                      children: <TextSpan>[
+                                                        TextSpan(
+                                                          text: ' . ',
+                                                          style: GoogleFonts
+                                                              .montserrat(
+                                                            fontSize: 40,
+                                                            fontWeight:
+                                                            FontWeight.w900,
+                                                            letterSpacing: .5,
+                                                            color:
+                                                            kPrimaryColor,
+                                                          ),
+                                                        ),
+                                                        TextSpan(
+                                                          text: "Staffing",
+                                                          style: GoogleFonts
+                                                              .montserrat(
+                                                            fontSize: 30,
+                                                            fontWeight:
+                                                            FontWeight.w900,
+                                                            letterSpacing: .5,
+                                                            height: 1.3,
+                                                            color: Colors.black,
+                                                          ),
+                                                        ),
+                                                        TextSpan(
+                                                          text: "\nConnection",
+                                                          style: GoogleFonts
+                                                              .montserrat(
+                                                            fontSize: 30,
+                                                            fontWeight:
+                                                            FontWeight.w900,
+                                                            letterSpacing: .5,
+                                                            height: 1.3,
+                                                            color: Colors.black,
+                                                          ),
+                                                        )
+                                                      ],
+                                                    )),
+                                                SizedBox(
+                                                  height: 20,
+                                                ),
+                                                SizedBox(
+                                                  width:_width*.65,
+                                                  child: Text(
+                                                    kAboutIGreen,
+                                                    style: GoogleFonts.varelaRound(
+                                                        fontSize: 14,
+                                                        height: 1.8,
+                                                        letterSpacing: 1.5,
+                                                        fontWeight: FontWeight.w900,
+                                                        color: Colors.black.withOpacity(.5)
+                                                    ),
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 30,
+                                                ),
+                                                Row(
+                                                  mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .start,
+                                                  children: [
+                                                    RaisedButton(
+                                                      color: Colors.black,
+                                                      shape:
+                                                      RoundedRectangleBorder(
+                                                        borderRadius:
+                                                        BorderRadius
+                                                            .circular(
+                                                            10.0),
+                                                        // side: BorderSide(color: Colors.red)
+                                                      ),
+                                                      padding: EdgeInsets
+                                                          .symmetric(
+                                                          vertical: 20,
+                                                          horizontal:
+                                                          25),
+                                                      onPressed: () {
+                                                      },
+                                                      child: Text(
+                                                        "Next Project",
+                                                        style: GoogleFonts.varelaRound(
+                                                            fontSize: 12,
+                                                            height: 1.8,
+                                                            letterSpacing: 1.3,
+                                                            fontWeight: FontWeight.w900,
+                                                            color: Colors.white
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    SizedBox(
+                                                      width: 10,
+                                                    ),
+                                                    RaisedButton(
+                                                      hoverColor: kPrimaryColor.withOpacity(.4),
+                                                      textColor:  Colors.black,
+                                                      disabledTextColor: Colors.white,
+                                                      color: Colors.white,
+
+                                                      shape: RoundedRectangleBorder(
+
+                                                          borderRadius: BorderRadius.circular(10.0),
+                                                          side: BorderSide(color: Colors.black,width: 3)
+
+                                                      ),
+                                                      padding: EdgeInsets.symmetric(vertical: 20,
+                                                          horizontal: 25),
+                                                      onPressed: (){},
+                                                      child:  Text(
+                                                        "Explore More",
+                                                        style: GoogleFonts.varelaRound(
+                                                            fontSize: 12,
+                                                            height: 1.8,
+                                                            letterSpacing: 1.5,
+                                                            fontWeight: FontWeight.w900,
+                                                            color: Colors.black
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
+
+                                        ],
+                                      )
+                                    ),
+                            ],
+                          )
+
+                  )
+
+            ),
+          ],
         ),
       ),
     );

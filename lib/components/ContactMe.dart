@@ -1,13 +1,13 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:form_field_validator/form_field_validator.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_web/models/FormModel.dart';
+
 import 'package:portfolio_web/utils/animation/teddy/teddy.controller.dart';
 import 'package:portfolio_web/utils/animation/teddy/tracking.text.input.dart';
-import 'package:portfolio_web/utils/constants.dart';
-import 'package:portfolio_web/utils/theme.dart';
+import 'package:http/http.dart' as http;
+import 'dart:io';
 
 
 
@@ -42,6 +42,7 @@ class SignInFormState extends State<SignInForm> {
 
 
 
+
   @override
   Widget build(BuildContext context) {
 
@@ -50,6 +51,19 @@ class SignInFormState extends State<SignInForm> {
     _onPressed() async {
       if (_formKey.currentState.validate()) {
         _formKey.currentState.save();
+        _formKey.currentState.reset();
+
+        final Email email = Email(
+          body: 'Email body',
+          subject: 'Email subject',
+          recipients: ['saam.baby@outlook.com'],
+          isHTML: false,
+        );
+
+        await FlutterEmailSender.send(email);
+
+
+
       }
     }
 
@@ -59,7 +73,7 @@ class SignInFormState extends State<SignInForm> {
         children: [
           Container(
             height: _height * 0.25,
-            width: _width*.4,
+            width: _width*.6,
             child: FlareActor(
               "Teddy.flr",
               shouldClip: false,
@@ -70,7 +84,7 @@ class SignInFormState extends State<SignInForm> {
           ),
           Container(
             width: 500,
-            height: 350,
+            height: 400,
 
             padding: EdgeInsets.symmetric(vertical: 10,
                 horizontal: 20),
@@ -94,7 +108,16 @@ class SignInFormState extends State<SignInForm> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      SizedBox(height: 50,),
+                      SizedBox(height: 30,),
+                      Text(
+                        "Please fill out the form",
+                        style: GoogleFonts.varelaRound(
+                            color: Colors.black,
+                            fontSize: 13,
+                            letterSpacing: 1,
+                            fontWeight: FontWeight.w900),
+                      ),
+                      SizedBox(height: 10,),
                       Row(
                         children: [
 
@@ -108,7 +131,6 @@ class SignInFormState extends State<SignInForm> {
 
                         ],
                       ),
-
                       SizedBox(height: 10,),
                       buildMessageFormField(),
                       SizedBox(height: 20,),
@@ -148,11 +170,11 @@ class SignInFormState extends State<SignInForm> {
    buildNameFormField() {
     return TrackingTextInput(
 
-      onTextChanged: (String name) {
-        name = name;
+      onTextChanged: (String value) {
+        name = value;
       },
       label: "Name",
-      labelText: "Please enter your fullname",
+      labelText: "Please enter your full name",
       onCaretMoved: (Offset caret) {
         _teddyController.lookAt(caret);
       },
@@ -165,11 +187,11 @@ class SignInFormState extends State<SignInForm> {
   buildEmailFormField() {
     return TrackingTextInput(
       isEmail:true,
-      onTextChanged: (String email) {
-        email = email;
+      onTextChanged: (String value) {
+        email = value;
       },
       label: "Message",
-      labelText: "Please enter your Message",
+      labelText: "Please enter your email",
       onCaretMoved: (Offset caret) {
         _teddyController.lookAt(caret);
       },
@@ -181,8 +203,8 @@ class SignInFormState extends State<SignInForm> {
    buildMessageFormField() {
     return TrackingTextInput(
       isMultiline:true,
-      onTextChanged: (String email) {
-        message = email;
+      onTextChanged: (String value) {
+        message = value;
       },
       label: "Message",
       labelText: "Please enter your message",

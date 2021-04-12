@@ -124,15 +124,16 @@ class _TrackingTextInputState extends State<TrackingTextInput> {
             fontSize: 12,
             height: 1.3,
             letterSpacing: 1,
+
             fontWeight: FontWeight.w700,
             color: Colors.black
         ),
         hintStyle: GoogleFonts.varelaRound(
-            fontSize: 11,
-            height: 1.3,
+            fontSize: 13,
             letterSpacing: 1,
-            fontWeight: FontWeight.w500,
-            color: Colors.black
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.w600,
+            color: Colors.black.withOpacity(.4)
         ),
       ),
       controller: _textController,
