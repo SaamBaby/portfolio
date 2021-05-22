@@ -23,7 +23,7 @@ class HeaderLogo extends StatelessWidget {
         cursor: SystemMouseCursors.click,
         child: GestureDetector(
           onTap: () {},
-          child: Image.asset('images/logo.png',width: 120,height: 120,),
+          child: Image.asset('logo.png',width: 120,height: 120,),
         ),
       ),
     );

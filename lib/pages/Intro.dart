@@ -147,8 +147,7 @@ class _IntroState extends State<Intro> {
                       flex: 1,
                       child: Container(
                         width: _width*.30,
-                        child: Image.asset('images/imgFile.png',width:
-                        700,height: 800,),
+                        child: Image.asset('imgFile.png',width: 700,height: 800,),
                       ),
                     ),
                     SizedBox(
@@ -335,7 +334,7 @@ class _IntroState extends State<Intro> {
                   flex: 1,
                   child: Container(
                     width: _width*.30,
-                    child: Image.asset('images/imgFile.png',width:
+                    child: Image.asset('imgFile.png',width:
                     700,height: 800,),
                   ),
                 ),

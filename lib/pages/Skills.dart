@@ -13,15 +13,15 @@ class Skills extends StatefulWidget {
 
 class _SkillsState extends State<Skills> {
   List<SkillItem> skillsItems = [
-    SkillItem(name: "Flutter", imgUrl: "images/file_type_flutter_icon_130599.png"),
-    SkillItem(name: "My Sql", imgUrl: "images/mysql_original_wordmark_logo_icon_146417.png"),
-    SkillItem(name: "Firebase", imgUrl: "images/google_firebase_icon-icons.com_61475.png"),
-    SkillItem(name: "GraphQl", imgUrl: "images/file_type_graphql_icon_130564.png"),
-    SkillItem(name: "React.js", imgUrl: "images/react_original_logo_icon_146374.png"),
-    SkillItem(name: "Node.js", imgUrl: "images/file_type_node_icon_130301.png"),
-    SkillItem(name: "HTML", imgUrl: "images/file_type_html_icon_130541.png"),
-    SkillItem(name: "CSS", imgUrl: "images/file_type_css_icon_130661.png"),
-    SkillItem(name: "Figma", imgUrl: "images/figma_logo_icon_170157.png"),
+    SkillItem(name: "Flutter", imgUrl: "file_type_flutter_icon_130599.png"),
+    SkillItem(name: "My Sql", imgUrl: "mysql_original_wordmark_logo_icon_146417.png"),
+    SkillItem(name: "Firebase", imgUrl: "google_firebase_icon-icons.com_61475.png"),
+    SkillItem(name: "GraphQl", imgUrl: "file_type_graphql_icon_130564.png"),
+    SkillItem(name: "React.js", imgUrl: "react_original_logo_icon_146374.png"),
+    SkillItem(name: "Node.js", imgUrl: "file_type_node_icon_130301.png"),
+    SkillItem(name: "HTML", imgUrl: "file_type_html_icon_130541.png"),
+    SkillItem(name: "CSS", imgUrl: "file_type_css_icon_130661.png"),
+    SkillItem(name: "Figma", imgUrl: "figma_logo_icon_170157.png"),
 
 
 

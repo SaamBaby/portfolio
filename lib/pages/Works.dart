@@ -168,7 +168,7 @@ class _WorksState extends State<Works> with TickerProviderStateMixin {
                                               Container(
                                                 width: _width * .18,
                                                 child: Image.asset(
-                                                  'images/igreen.Screenshot.png',
+                                                  'igreen.Screenshot.png',
                                                   width: 700,
                                                   height: 800,
                                                 ),
@@ -492,7 +492,7 @@ class _WorksState extends State<Works> with TickerProviderStateMixin {
                                         CrossAxisAlignment.start,
                                         children: [
                                           Image.asset(
-                                            'images/igreen.Screenshot.png',
+                                            'igreen.Screenshot.png',
                                             width: 300,
                                             height: 600,
                                           ),
@@ -756,7 +756,7 @@ class _WorksState extends State<Works> with TickerProviderStateMixin {
                                         CrossAxisAlignment.start,
                                         children: [
                                           Image.asset(
-                                            'images/igreen.Screenshot.png',
+                                            'igreen.Screenshot.png',
                                             width: 400,
                                             height: 600,
                                           ),

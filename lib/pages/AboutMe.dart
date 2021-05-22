@@ -69,7 +69,7 @@ class _AboutMeState extends State<AboutMe> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset('images/ui-design.png',width:
+                      Image.asset('ui-design.png',width:
                       100,height: 100,),
                       Text("Front end",
                         style:GoogleFonts.varelaRound(
@@ -106,7 +106,7 @@ class _AboutMeState extends State<AboutMe> {
                 child:  Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('images/illustration.png',width:
+                    Image.asset('illustration.png',width:
                     100,height: 100,),
                     Text("Prototyping",
                       style:GoogleFonts.varelaRound(
@@ -144,7 +144,7 @@ class _AboutMeState extends State<AboutMe> {
                 child:  Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('images/content-management.png',width:
+                    Image.asset('content-management.png',width:
                     100,height: 100,),
                     Text("Back end",
                       style:GoogleFonts.varelaRound(
@@ -181,7 +181,7 @@ class _AboutMeState extends State<AboutMe> {
                 child:  Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('images/pros-and-cons.png',width:
+                    Image.asset('pros-and-cons.png',width:
                     100,height: 100,),
                     Text("Testing",
                       style:GoogleFonts.varelaRound(
@@ -323,22 +323,11 @@ class _AboutMeState extends State<AboutMe> {
 
                         ],),
                         SizedBox(height: 50,),
-                        Image.asset('images/signature.png',width:
+                        Image.asset('signature.png',width:
                         100,height: 100,)
-
-
                       ],
                     ),
                   ),
-
-
-
-
-
-
-
-
-
                 ],
               ),
             ),
@@ -396,7 +385,7 @@ class _AboutMeState extends State<AboutMe> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset('images/ui-design.png',width:
+                      Image.asset('ui-design.png',width:
                       100,height: 100,),
                       Text("Front end",
                         style:GoogleFonts.varelaRound(
@@ -433,7 +422,7 @@ class _AboutMeState extends State<AboutMe> {
                 child:  Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('images/illustration.png',width:
+                    Image.asset('illustration.png',width:
                     100,height: 100,),
                     Text("Prototyping",
                       style:GoogleFonts.varelaRound(
@@ -471,7 +460,7 @@ class _AboutMeState extends State<AboutMe> {
                 child:  Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('images/content-management.png',width:
+                    Image.asset('content-management.png',width:
                     100,height: 100,),
                     Text("Back end",
                       style:GoogleFonts.varelaRound(
@@ -508,7 +497,7 @@ class _AboutMeState extends State<AboutMe> {
                 child:  Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('images/pros-and-cons.png',width:
+                    Image.asset('pros-and-cons.png',width:
                     100,height: 100,),
                     Text("Testing",
                       style:GoogleFonts.varelaRound(
@@ -657,7 +646,7 @@ class _AboutMeState extends State<AboutMe> {
 
                         ],),
                         SizedBox(height: 50,),
-                        Image.asset('images/signature.png',width:
+                        Image.asset('signature.png',width:
                         100,height: 100,)
 
 
@@ -816,7 +805,7 @@ class _AboutMeState extends State<AboutMe> {
 
                         ],),
                         SizedBox(height: 50,),
-                        Image.asset('images/signature.png',width:
+                        Image.asset('signature.png',width:
                         100,height: 100,)
 
 
